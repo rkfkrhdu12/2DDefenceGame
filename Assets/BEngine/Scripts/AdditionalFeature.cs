@@ -1,5 +1,7 @@
 using System;
 
+public delegate void DelegateFunction();
+
 [Serializable]
 public class DataPointer<T>
 {

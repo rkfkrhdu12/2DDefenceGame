@@ -89,7 +89,7 @@ public class InputSystem : MonoBehaviour
 
     bool _isUIMode = false;
 
-    UpdateDelegateFunction OnUpdateFunction;
+    DelegateFunction OnUpdateFunction;
 
     #endregion
 
@@ -307,8 +307,6 @@ public class InputSystem : MonoBehaviour
     #region Define
 
     public delegate void InputButton<T>(T data);
-
-    delegate void UpdateDelegateFunction();
 
     [System.Serializable]
     public class Key<T> : DataPointer<T>
